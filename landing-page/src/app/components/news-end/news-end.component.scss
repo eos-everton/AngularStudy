@@ -2,7 +2,6 @@ $spacer: 1rem;
 
 .bg-top {
     background-color: black;
-    height: 150vh;
 }
 
 .text-grey {
@@ -70,4 +69,15 @@ $spacer: 1rem;
     margin-top: 20vh;
 
     z-index: 0;
+}
+.text-custom{
+    font-family: 'Merriweather-Italic';
+}
+.h-custom{
+    height: 40vh;
+}
+.p-custom{
+    margin-left: ($spacer * 10) !important;
+    margin-right: ($spacer * 10) !important;
+    margin-bottom: 10vh !important;
 }

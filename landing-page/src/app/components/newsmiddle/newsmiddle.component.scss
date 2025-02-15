@@ -43,6 +43,11 @@ $spacer: 1rem;
   justify-content: center;
   padding: 20px;
 }
+.img-position{
+  margin-left: 266px;
+  margin-top: 3vh;
+  z-index: 0;
+}
 
 @media (max-width: 1570px) {
   .card-container {
