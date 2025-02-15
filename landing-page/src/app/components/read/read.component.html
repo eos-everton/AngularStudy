@@ -1,0 +1,29 @@
+<div *ngFor="let historia of historias" class="sectionHeader_LBPx d-flex flex-column mb-5">
+    <div class="titleHolder_pr8n">
+        <h2 class="title_1zyY">
+            <span data-gettext-identifier="related-content-colorstory">
+                {{ historia.titulo }}
+            </span>
+        </h2>
+        <figure class="flourish_3IhF">
+            <div class="flourishStick_S-mK"></div>
+        </figure>
+        <div class="childHolder_3vlx"></div>
+    </div>
+    <div class="">
+        <div class="text-white title-collapse" [ngClass]="{'collapse': !isCollapsed[historia.id]}">
+            {{ historia.sinopse }} 
+            <a class="text-decoration-none text-color" (click)="isCollapsed[historia.id] = !isCollapsed[historia.id]" role="button">
+                ...Ler mais
+            </a>
+        </div>
+        <div class="text-grey collapse bg-body-text" [id]="historia.id" [ngClass]="{'show': !isCollapsed[historia.id]}">
+            {{ historia.texto }} 
+            <div class="text-white">
+                <a class="text-decoration-none text-color" (click)="isCollapsed[historia.id] = !isCollapsed[historia.id]" role="button">
+                    Ler menos
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

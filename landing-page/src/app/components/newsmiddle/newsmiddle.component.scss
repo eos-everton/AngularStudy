@@ -1,0 +1,71 @@
+$spacer: 1rem;
+.bg-top{
+  background-color: black;
+
+}
+.title {
+  font-family: "Merriweather-bold";
+
+}
+
+.bg-top-card{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+.border-card{
+  border-radius: 0px !important;
+}
+
+
+.bg-text-card {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 5%, rgba(17, 0, 0, 0.6277109621451105) 40%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+}
+.justify-content-center-card{
+  justify-content: end !important;
+}
+
+.card-text{
+  font-family: "Merriweather-bold";
+  font-size: 0.8rem;
+}
+
+.mb-5{
+  margin-bottom: ($spacer * 10) !important;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 1570px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr); /* Em telas menores, 2 por linha */
+  }
+}
+
+@media (max-width: 1238px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* Em telas menores, 2 por linha */
+  }
+}
+
+@media (max-width: 930px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Em telas muito pequenas, 1 por linha */
+  }
+}
+
+@media (max-width: 620px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr); /* Em telas muito pequenas, 1 por linha */
+  }
+}
+
+

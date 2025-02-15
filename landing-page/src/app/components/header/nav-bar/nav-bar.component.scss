@@ -1,0 +1,79 @@
+$spacer: 1rem;
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #aeb6c0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #486375;
+}
+
+.text-custom > ul > li > a{
+  color: white;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.size-img {
+  width: 6rem;
+}
+
+.bg-custom {
+  background-color: #111 !important;
+}
+.nav-margin {
+  padding-left: ($spacer * 3);
+  padding-right: ($spacer * 3);
+}
+
+.bar-colors {
+  height: 7px;
+}
+
+.bg-accent-blue {
+  background-color: #31A8D7 !important;
+}
+
+.bg-green {
+  background-color: #65B231;
+}
+
+.bg-red {
+  background-color: #E8501D;
+}
+
+.bg-orange {
+  background-color: #F29049;
+}
+.follow{
+  font-family: "Merriweather-light";
+}
+
+li>a {
+  font-family: "Merriweather-light";
+  color: #F29049;
+
+  &:hover {
+    color: #a76230;
+  }
+}
+
+

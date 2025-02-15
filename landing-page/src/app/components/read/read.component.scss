@@ -1,0 +1,72 @@
+$spacer: 1rem;
+
+.bg-top {
+    background-color: black;
+}
+.text-grey{
+    font-family: "Merriweather-light";
+    font-size: 1rem;
+    color: #ffffff !important;
+    z-index: 1;
+    position: relative;
+    letter-spacing: .05em;
+    
+
+}
+
+.titleHolder_pr8n {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title_1zyY {
+    font-family: "Merriweather-bold";
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #f0e6d2;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.flourish_3IhF {
+    display: flex;
+    flex-grow: 1;
+    height: 1px;
+}
+
+.flourishBox_2kbG {
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 7px;
+    transform-origin: 0 0;
+    transform: translateY(.5px) rotate(-45deg);
+    width: 7px;
+}
+
+.flourishStick_S-mK {
+    background: linear-gradient(90deg, #5a5957 0, rgba(0, 0, 0, 0));
+    flex-grow: 1;
+    margin-left: 2.22793px;
+}
+
+.mb-5 {
+    margin-left: ($spacer * 10) !important;
+    margin-right: ($spacer * 10) !important;
+    margin-bottom: 10vh !important;
+}
+
+.text-color{
+    color: #005366;
+}
+.bg-body-text{
+    background-color: #2929299c;
+    padding: 20px;
+    border-radius: 10px;
+}
