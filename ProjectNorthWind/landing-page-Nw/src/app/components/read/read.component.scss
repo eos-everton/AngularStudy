@@ -10,7 +10,7 @@ $spacer: 1rem;
     z-index: 1;
     position: relative;
     letter-spacing: .05em;
-    
+
 
 }
 
@@ -69,4 +69,7 @@ $spacer: 1rem;
     background-color: #2929299c;
     padding: 20px;
     border-radius: 10px;
+}
+.over {
+  overflow-x: unset !important;
 }

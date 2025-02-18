@@ -25,15 +25,20 @@
   font-style: normal;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
-  
+
   /* Faz a rolagem suave */
 }
 
 body {
   padding-top: 110px;
   font-family: 'Merriweather-Light', sans-serif;
+
   /* Definindo fonte padrão */
 }
 

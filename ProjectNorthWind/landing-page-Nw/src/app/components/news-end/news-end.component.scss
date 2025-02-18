@@ -65,7 +65,7 @@ $spacer: 1rem;
 
 .img-end {
 
-    margin-left: 45vw;
+    margin-left: 46vw;
     margin-top: 20vh;
 
     z-index: 0;
@@ -81,3 +81,7 @@ $spacer: 1rem;
     margin-right: ($spacer * 10) !important;
     margin-bottom: 10vh !important;
 }
+.over {
+  overflow-x: unset !important;
+}
+

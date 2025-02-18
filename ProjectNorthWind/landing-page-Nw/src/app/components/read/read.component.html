@@ -1,6 +1,6 @@
 <div *ngFor="let historia of historias" class="sectionHeader_LBPx d-flex flex-column mb-5">
     <div class="titleHolder_pr8n">
-        <h2 class="title_1zyY">
+        <h2 class="title_1zyY over">
             <span data-gettext-identifier="related-content-colorstory">
                 {{ historia.titulo }}
             </span>
@@ -12,13 +12,13 @@
     </div>
     <div class="">
         <div class="text-white title-collapse" [ngClass]="{'collapse': !isCollapsed[historia.id]}">
-            {{ historia.sinopse }} 
+            {{ historia.sinopse }}
             <a class="text-decoration-none text-color" (click)="isCollapsed[historia.id] = !isCollapsed[historia.id]" role="button">
                 ...Ler mais
             </a>
         </div>
         <div class="text-grey collapse bg-body-text" [id]="historia.id" [ngClass]="{'show': !isCollapsed[historia.id]}">
-            {{ historia.texto }} 
+            {{ historia.texto }}
             <div class="text-white">
                 <a class="text-decoration-none text-color" (click)="isCollapsed[historia.id] = !isCollapsed[historia.id]" role="button">
                     Ler menos
