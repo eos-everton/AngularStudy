@@ -1,8 +1,16 @@
-/// <reference types="@angular/localize" />
-
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { AppComponent } from './app/app.component';
+import { appConfig } from './app/app.config';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+const appConfigWithAnimations = {
+  ...appConfig, // Preserva outras configurações que você já tenha
+  providers: [
+    ...appConfig.providers, // Se já houver providers, mescle-os
+    provideAnimations(), // Adiciona o provider para animações
+  ],
+};
+
+bootstrapApplication(AppComponent, appConfigWithAnimations).catch((err) =>
+  console.error(err)
+);
