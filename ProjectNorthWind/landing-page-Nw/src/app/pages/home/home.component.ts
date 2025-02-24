@@ -3,11 +3,12 @@ import { NewsTopComponent } from "../../components/news-top/news-top.component";
 import { NewsmiddleComponent } from "../../components/newsmiddle/newsmiddle.component";
 import { NewsEndComponent } from "../../components/news-end/news-end.component";
 import { ModalComponent } from '../../components/modal/modal.component';
+import { LivroComponent } from "../../components/livro/livro.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NewsTopComponent, NewsmiddleComponent, NewsEndComponent, ModalComponent],
+  imports: [NewsTopComponent, NewsmiddleComponent, NewsEndComponent, ModalComponent, LivroComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
