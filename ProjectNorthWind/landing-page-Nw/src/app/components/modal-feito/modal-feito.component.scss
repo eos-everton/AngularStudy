@@ -1,0 +1,15 @@
+.size-img {
+    width: 6rem;
+}
+.custom-container{
+    padding: 25px;
+}
+.custom-title{
+    height: 10vh;
+}
+.custom-border{
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #878787 0%, #212121 100%);
+    border-image-slice: 1;    
+    background-color: rgba(17, 19, 24, 1) ;
+}
