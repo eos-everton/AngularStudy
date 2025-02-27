@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 
@@ -17,6 +17,8 @@ export class ModalComponent implements OnInit {
   visible: boolean = false;
   items: any[] = [];
   errorMessage: string = '';
+  @Input() item: any;
+  @Output() close = new EventEmitter<void>();
 
   constructor(private apiService: ApiService) {}
 
@@ -41,7 +43,9 @@ export class ModalComponent implements OnInit {
       });
   }
 
-  showDialog() {
-    this.visible = true;
+  
+
+  closeModal() {
+    this.close.emit(); // Emite o evento para fechar o modal
   }
 }

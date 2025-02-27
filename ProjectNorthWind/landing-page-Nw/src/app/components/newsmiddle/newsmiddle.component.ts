@@ -4,17 +4,20 @@ import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-newsmiddle',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, ModalComponent],
   templateUrl: './newsmiddle.component.html',
   styleUrls: ['./newsmiddle.component.scss'] // Correção aqui
 })
 export class NewsmiddleComponent implements OnInit {
   items: any[] = [];
   errorMessage: string = ''; // Adicionando uma variável para erro
+  visible = false;
+  selectedItem: any = null;
 
   constructor(private apiService: ApiService) {}
 
@@ -33,5 +36,14 @@ export class NewsmiddleComponent implements OnInit {
       this.items = data;
       console.log('Itens:', this.items);
     });
+  }
+  openModal(item: any) {
+    this.selectedItem = item; // Armazena o item clicado
+    this.visible = true; // Exibe o modal
+  }
+
+  closeDialog() {
+    this.visible = false;
+    this.selectedItem = null;
   }
 }

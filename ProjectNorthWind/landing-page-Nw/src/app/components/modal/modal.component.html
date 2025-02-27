@@ -1,14 +1,12 @@
-<div class="card flex justify-content-center">
-  <p-button (onClick)="showDialog()" label="Show" />
-  <p-dialog
-    header="Header"
-    [(visible)]="visible"
-    [modal]="true"
-    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
-    [style]="{ width: '50vw' }"
-    [draggable]="false"
-    [resizable]="false"
-  >
-    <p>Lorem ipsum dolor sit amet...</p>
-  </p-dialog>
+<div class="fullscreen-modal">
+  <div class="modal-content" [ngStyle]="item?.images ? {'background-image': 'url(assets/img/guilda/' + item.images + ')'} : {}">
+    
+    <button (click)="closeModal()" class="close-btn z-index-custom-btn">X</button>
+    <div class="title custom-border z-index-custom over ">
+      <h2 class="text-white over">{{ item?.nome }}</h2>
+      <p class="text-white z-index-custom">{{ item?.titulo }}</p>
+    </div>
+    
+    <img *ngIf="item?.images" [src]="'assets/img/guilda/' + item.images" alt="Imagem da Guilda">
+  </div>
 </div>
