@@ -31,6 +31,15 @@ $spacer: 1rem;
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+.position-icon{
+  top: 40px;
+  right: 40px;
+}
+.collapse-custom{
+  justify-content: end;
+  
+}
+
 
 .size-img {
   width: 6rem;
@@ -40,6 +49,10 @@ $spacer: 1rem;
   background-color: #111 !important;
 }
 .nav-margin {
+  padding-left: ($spacer * 3);
+  padding-right: ($spacer * 3);
+}
+.nav-margin-ul {
   padding-left: ($spacer * 3);
   padding-right: ($spacer * 3);
 }
@@ -76,4 +89,11 @@ li>a {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .nav-margin-ul {
+      padding-left: 0 !important;
+      padding-right:0 !important;
+
+    }
+}
 

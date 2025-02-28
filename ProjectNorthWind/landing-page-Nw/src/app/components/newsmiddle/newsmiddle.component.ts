@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { catchError } from 'rxjs/operators';
@@ -19,7 +19,7 @@ export class NewsmiddleComponent implements OnInit {
   visible = false;
   selectedItem: any = null;
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) {}
 
   ngOnInit() {
     this.getItems();
@@ -45,5 +45,9 @@ export class NewsmiddleComponent implements OnInit {
   closeDialog() {
     this.visible = false;
     this.selectedItem = null;
+  }
+
+  openDetails(item: any) {
+    this.router.navigate(['members'], { queryParams: item });
   }
 }

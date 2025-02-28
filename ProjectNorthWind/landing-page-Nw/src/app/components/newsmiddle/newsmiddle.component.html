@@ -17,13 +17,11 @@
 
       <div class="card-container d-grid text-white mb-5 card-custom">
         <div *ngFor="let item of items" class="text-white">
-        <app-modal *ngIf="visible" [item]="selectedItem" (close)="closeDialog()"></app-modal>
-      
           <div
             class="card border-card bg-top-card"
             style="width: 18rem;"
             [ngStyle]="{ 'background-image': 'url(assets/img/guilda/' + item.images + ')' }"
-            (click)="openModal(item)"
+            (click)="openDetails(item)"
           >
             <div class="card-body bg-text-card d-flex align-items-center justify-content-center-card flex-column">
               <h5 class="card-title text-white">{{ item.nome }}</h5>

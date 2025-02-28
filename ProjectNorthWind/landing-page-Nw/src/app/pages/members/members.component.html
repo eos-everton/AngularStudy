@@ -1,0 +1,66 @@
+<div class="auto-p bg-custom"
+  [ngStyle]="data?.images ? {'background-image': 'url(assets/img/guilda/' + data.images + ')'} : {}">
+  <div class="p-custom d-flex flex-column gap-3 ">
+
+    <div class="custom-border p-3">
+      <div class="d-flex justify-content-center fs-2">
+        {{ data?.nome }}
+      </div>
+      <div class="d-flex justify-content-center fs-5">
+        {{ data?.titulo }}
+      </div>
+    </div>
+    <div class="d-flex gap-3 ">
+      <div class="custom-border w-custom p-5 d-flex flex-column justify-content-between">
+        <div>
+          <p class="">
+            {{ data?.descricao }}
+          </p>
+          <p class="">
+            Eryndor ocupa a posição de Mestre dos Batedores dentro da Ventos do Norte, sendo responsável pela vigilância
+            das
+            fronteiras e pela segurança dos territórios gelados de Gelion. Ele lidera os rastreadores e exploradores da
+            guilda, garantindo que nenhum inimigo ou intruso passe despercebido. Seu conhecimento das trilhas ocultas e
+            sua
+            conexão com a floresta fazem dele a primeira linha de defesa contra ameaças desconhecidas.
+            Embora sua postura reservada e seu ceticismo o tornem um líder discreto, seu julgamento é respeitado por
+            todos.
+            Quando Eryndor fala, é porque viu algo que os outros não perceberam e ignorá-lo pode significar a diferença
+            entre a sobrevivência e a ruína. Ele acredita que o equilíbrio da floresta não deve ser quebrado e que certos
+            mistérios devem permanecer intocados, o que o coloca em confronto direto com Kaelen, que deseja desvendá-los.
+          </p>
+        </div>
+        <div class=" text-end">
+          "Se o vento não ouvir seus passos e a neve não guardar seu rastro, então você está pronto."
+        </div>
+      </div>
+      <div class=" d-flex flex-column gap-3 w-custom-details">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src=".././../../assets/img/logo.png" alt="">
+        </div>
+        <div>
+          <div class="title-details custom-border fs-5 d-flex p-3 justify-content-center">Papel na Guilda </div>
+          <div class="custom-border d-flex flex-column align-items-center p-4 gap-3">
+            <div>Mestre dos Batedores</div>
+            <div>Guardião das Fronteiras</div>
+          </div>
+        </div>
+        <div class="custom-border d-flex flex-column align-items-center p-4 gap-3">
+          <div class="d-flex flex-column align-items-center gap-3">
+            <div>
+              Raça: {{data?.raca}}
+            </div>
+            <div>
+              Forma Animal: {{data?.forma_animal}}
+            </div>
+          </div>
+          <div class="msg text-end">
+            "Nas sombras da neve e no sussurro do vento, eu sou o olhar que vigia e os passos que caçam. Sou Eryndor, o
+              Lobo Sombrio, e nenhum segredo se esconde de mim por muito tempo."
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

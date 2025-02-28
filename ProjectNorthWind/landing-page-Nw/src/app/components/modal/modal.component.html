@@ -1,12 +1,71 @@
 <div class="fullscreen-modal">
-  <div class="modal-content" [ngStyle]="item?.images ? {'background-image': 'url(assets/img/guilda/' + item.images + ')'} : {}">
-    
+  <div class="modal-content d-flex"
+    [ngStyle]="item?.images ? {'background-image': 'url(assets/img/guilda/' + item.images + ')'} : {}">
+
     <button (click)="closeModal()" class="close-btn z-index-custom-btn">X</button>
     <div class="title custom-border z-index-custom over ">
-      <h2 class="text-white over">{{ item?.nome }}</h2>
-      <p class="text-white z-index-custom">{{ item?.titulo }}</p>
+      <div class="text-white over fs-3">
+        {{ item?.nome }}
+      </div>
+
+      <div class="text-white z-index-custom">
+        {{ item?.titulo }}
+      </div>
     </div>
-    
-    <img *ngIf="item?.images" [src]="'assets/img/guilda/' + item.images" alt="Imagem da Guilda">
+    <div class="body-modal z-index-custom d-flex ">
+      <div class="text-body custom-border ">
+        <p class="text-white">
+          Um caçador experiente e ágil, Eryndor domina as trilhas ocultas de Gelion. Vestido com um manto de peles
+          escuras
+          e armado com um arco longo, ele se move como um fantasma entre as árvores prateadas. Seus olhos afiados
+          enxergam
+          no escuro, um dom que lhe rendeu a fama de predador silencioso. Ele e seu irmão Kaelen compartilham um vínculo
+          profundo, mas diferem em suas ambições. Enquanto Kaelen busca desvendar os segredos de Gelion, Eryndor
+          acredita
+          que há coisas que deveriam permanecer esquecidas. Um caçador ágil e furtivo, Eryndor se transforma em um lobo
+          negro de olhos brilhantes, capaz de atravessar as sombras da floresta sem ser percebido. Seu faro aguçado e
+          sua
+          velocidade o tornam perfeito para rastreamento e emboscadas. Ele acredita que Gelion guarda segredos que não
+          deveriam ser perturbados, o que muitas vezes o coloca em conflito com seu irmão.
+        </p>
+        <p class="text-white">
+          Eryndor ocupa a posição de Mestre dos Batedores dentro da Ventos do Norte, sendo responsável pela vigilância
+          das
+          fronteiras e pela segurança dos territórios gelados de Gelion. Ele lidera os rastreadores e exploradores da
+          guilda, garantindo que nenhum inimigo ou intruso passe despercebido. Seu conhecimento das trilhas ocultas e
+          sua
+          conexão com a floresta fazem dele a primeira linha de defesa contra ameaças desconhecidas.
+          Embora sua postura reservada e seu ceticismo o tornem um líder discreto, seu julgamento é respeitado por
+          todos.
+          Quando Eryndor fala, é porque viu algo que os outros não perceberam e ignorá-lo pode significar a diferença
+          entre a sobrevivência e a ruína. Ele acredita que o equilíbrio da floresta não deve ser quebrado e que certos
+          mistérios devem permanecer intocados, o que o coloca em confronto direto com Kaelen, que deseja desvendá-los.
+        </p>
+        <p class="text-white msg">
+          "Se o vento não ouvir seus passos e a neve não guardar seu rastro, então você está pronto."
+        </p>
+      </div>
+      <div class="details d-flex flex-column">
+        <div class="img-body">
+          <img src=".././../../assets/img/logo.png" alt="">
+        </div>
+        <div class="details-body-1">
+          Papel na Guilda:
+
+          Mestre dos Batedores
+
+          Guardião das Fronteiras
+        </div>
+        <div class="datails-body-2">
+          Raça: Humano
+          Forma Animal: Lobo Negro
+          <p class="msg">
+            "Nas sombras da neve e no sussurro do vento, eu sou o olhar que vigia e os passos que caçam. Sou Eryndor, o
+            Lobo Sombrio, e nenhum segredo se esconde de mim por muito tempo."
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
